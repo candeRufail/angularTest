@@ -1,14 +1,15 @@
 
-<h3>COMENTARIOS:</h3>
-<div class="container" *ngFor="let comentario of comentarios" >
-   
-    <h4> {{comentario.name}}</h4>
-
-    <h2>{{comentario.email}}</h2>
-
-    <p>{{comentario.body}}</p>
+<div class="container">
+    <p class="comentario">COMENTARIOS:</p>
+    <div  *ngFor="let comentario of comentarios" >
+       
+        <h4>Nombre: {{comentario.name}}</h4>
     
-
-  
-</div>
-<button (click)="fechaComentario()">Emitir</button>
+        <h5>E-mail: {{comentario.email}}</h5>
+    
+        <p>Comentario: {{comentario.body}}</p>
+        
+      
+    </div>
+    <button class="btn" (click)="fechaComentario()">Emitir</button>
+    </div>
