@@ -1,12 +1,12 @@
 <div class="container">
 
-    <p>{{date | date:'dd/mm/yyyy'}}</p>
-    <h2> Este es el post: {{post.id}}</h2>
+    <p *ngIf="date"  class="fecha"> Last comment: {{date | date:'dd/mm/yyyy'}}</p>
+    <h1> Este es el post: {{post.id}}.</h1>
 
-    <h3 class="title">Titulo: {{post.title}}</h3>
+    <h3> <span>Titulo:</span> {{post.title}}.</h3>
 
-    <p class="body"> Descripcion: {{post.body}}</p>
+    <h4> <span> Descripcion:</span> {{post.body}}.</h4>
    
 </div>
 
-<app-comentarios [id]="post.id"   (clickFechaComentario)="verFecha($event)"></app-comentarios>
+<app-comentarios [id]="post.id" (clickFechaComentario)="verFecha($event)"  ></app-comentarios>

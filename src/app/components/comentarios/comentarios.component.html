@@ -1,13 +1,13 @@
 
 <div class="container">
-    <p class="comentario">COMENTARIOS:</p>
-    <div  *ngFor="let comentario of comentarios" >
+    <h3 class="comentario">COMENTARIOS:</h3>
+    <div class="box" *ngFor="let comentario of comentarios" >
        
-        <h4>Nombre: {{comentario.name}}</h4>
+        <h4 class="title"> <span>Nombre: </span>  {{comentario.name}}.</h4>
     
-        <h5>E-mail: {{comentario.email}}</h5>
+        <h4 class="title"> <span>E-mail:</span>    {{comentario.email}}</h4>
     
-        <p>Comentario: {{comentario.body}}</p>
+        <h4 class="title"> <span>Comentario: </span>   {{comentario.body}}.</h4>
         
       
     </div>

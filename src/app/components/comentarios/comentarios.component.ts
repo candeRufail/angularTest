@@ -12,7 +12,6 @@ export class ComentariosComponent implements OnInit {
   @Input() set id( newValue: number){
     if(newValue != undefined){
       this.getComments(newValue);
-      console.log("valor",this.id, newValue );
     }
   }; 
   @Output() clickFechaComentario = new EventEmitter<any>();
@@ -30,7 +29,6 @@ export class ComentariosComponent implements OnInit {
 
     getComments(id:number) { this._postService.getComentario(id).subscribe( data => {
       this.comentarios = data
-      console.log(this.comentarios, this.id);
     })
       
   }

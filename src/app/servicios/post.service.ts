@@ -25,14 +25,11 @@ getListPost(): Observable<any>{
 
 
 getDetail(i: number):Observable<any> {
-  // const url = `${this.postDetailUrl}/[i]`;
-  // return this.http.get(url);
   return this.http.get(this.postDetailUrl + i);
   
 } 
 
 getComentario(i:number):Observable<any> {
-  console.log('holaaaaa');
   return this.http.get(this.comentarioUrl + i);
   
 }
