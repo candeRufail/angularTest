@@ -1,0 +1,30 @@
+<div class="container">
+<h3>LIST POST</h3>
+
+<table class="table">
+
+    <tr class="title">
+  
+      <td class="subtitle">ID</td>
+  
+      <td class="subtitle">Post</td>
+  
+      <td class="subtitle">Actions</td>
+  
+    </tr>
+  
+    <tr class="fila"*ngFor="let post of posts; index as i" >
+  
+      <td class="subtitle"  >{{post.id}}</td>
+  
+      <td>{{post.title}}</td>
+  
+
+     
+      <td> <a  class="btn" [routerLink]="['/post' , i+1]" > Ver </a></td>
+  
+    </tr>
+  
+   
+  </table>
+</div>

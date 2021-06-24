@@ -1,0 +1,35 @@
+.container{
+    margin: 50px 50px 50px 50px; 
+}
+
+.title{
+    
+    color:black;
+    background-color: gainsboro;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 30px;
+
+}
+.subtitle{
+    padding: 15px 15px 15px 15px;
+    font-weight: 700;
+}
+
+.fila{
+    color: black;
+    text-align: center;
+    background-color: white;
+   
+
+}
+.btn{
+    border: none;
+    color:blue;
+    text-decoration: underline;
+    background-color: white;
+}
+
+.table,td{
+    border: 1px solid grey;
+}
